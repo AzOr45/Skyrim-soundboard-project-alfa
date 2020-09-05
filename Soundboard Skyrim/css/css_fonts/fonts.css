@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Dovah-Font";
+  src: url("fonts/Dovah-Font/dragonalphabet.eot"); /* IE9 Compat Modes */
+  src: url("fonts/Dovah-Font/dragonalphabet.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/Dovah-Font/dragonalphabet.otf") format("opentype"), /* Open Type Font */
+  url("fonts/Dovah-Font/dragonalphabet.svg") format("svg"), /* Legacy iOS */
+  url("fonts/Dovah-Font/dragonalphabet.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("fonts/Dovah-Font/dragonalphabet.woff") format("woff"), /* Modern Browsers */
+  url("fonts/Dovah-Font/dragonalphabet.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+
+* {
+  font-family: 'Dovah-Font';
+}
+
+*/

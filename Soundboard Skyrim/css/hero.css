@@ -1,0 +1,56 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Poppins;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header{
+  height: 100vh;
+  width: 100%;
+  background-color: #E7B024;
+  background-image: url(hero-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header__top-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+  height: 20vh;
+  flex-wrap: wrap;
+}
+
+.header_h1{
+  font-size: 3em;
+}
+
+.header__link-bar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__links{
+  display: block;
+  margin-left: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.header__content{
+margin-left:  5%;
+}
+
+.section-one{
+  height: 100vh;
+  width: 100%;
+  background-color: #1f1f1f;
+}

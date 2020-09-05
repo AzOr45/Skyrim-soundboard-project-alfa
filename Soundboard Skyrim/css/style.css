@@ -1,0 +1,502 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 10px 0 10px;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+  font-family: 'Poppins';
+}
+
+.menu{
+  backdrop-filter: blur(20px);
+  background-color: #E7B024;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+}
+
+.menu a{
+ text-decoration: none;
+ color: white;
+ font-size: 26px;
+ font-weight: 600;
+}
+
+.header-skyrim{
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.header-top-position{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+.button-menu-animation{
+  transition: .2s;
+}
+
+.button-menu-animation:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button-menu{
+  display:flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  background-color: var(--button-menu-background-color);
+  color: var(--button-menu-color);
+  font-size: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-menu-active-position{
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url(menu-top.jpg);
+  padding-top: 5px;
+}
+
+.menu-site-name{
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.menu-site-name::before{
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(logo-white.png);
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.menu-close-button{
+  display: flex;
+  color: white;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin-right: 10px;
+}
+
+.menu-close-button i{
+  font-size: 36px;
+}
+
+.menu-search{
+  border-radius: 30px;
+  height: 50px;
+  width: 220px;
+  border: none;
+  outline: none;
+  display: flex;
+}
+
+.menu-search-position{
+  background-color: white;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  position: relative;
+  bottom: 30px;
+  padding-left: 10px;
+}
+
+.menu-search-button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  color: darkgray;
+}
+
+.menu-search-button:hover{
+
+}
+
+.menu .menu-list{
+  width: 100%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 120px;
+  margin-top: 25px;
+}
+
+.menu .menu-list i{
+  color: white;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-left: -20px;
+}
+
+.menu-list-name{
+  color: white;
+  font-size: 25px;
+  display: flex;
+}
+
+.menu-list-links{
+
+}
+
+.menu-list-links:hover{
+  /*transform: scale(1.05);*/
+  margin-left: 10px;
+}
+
+.header-bottom-position{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cat-name{
+  display: flex;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 26px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.cat-name p{
+  background-color: var(--cat-name-background-color);
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  padding: 10px 25px 10px 25px;
+  border-radius: 30px;
+}
+
+.cat-name-position{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.cat-name-image{
+  display: flex;
+  background-image: url(12.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+}
+
+.cat-name-image-white{
+  display: flex;
+  width: 135px;
+  height: 135px;
+  border-radius: 150px;
+  background-color: var(--cat-name-image-white-background-color);
+  justify-content: center;
+  align-items: center;
+  left: 50px;
+}
+
+.main-skyrim{
+
+}
+
+.skyrim-nav{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+
+.skyrim-nav-position{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.skyrim-nav-option{
+  display: flex;
+  background-color: var(--nav-option);
+  border-radius: 70px;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  height: 60px;
+  transition:.8s;
+  margin-bottom: 10px;
+}
+
+/*
+.skyrim-nav-option:hover .skyrim-nav-option-name{
+  margin: 2px 20px 2px 20px;
+}*/
+
+.skyrim-nav-option:hover .skyrim-nav-option-image{
+  transform: scale(1.2);
+}
+
+.skyrim-nav-option-image{
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+  transition:.2s;
+}
+
+.skyrim-nav-option-name{
+  display: flex;
+  margin: 0 10px 0 10px;
+  transition:.2s;
+}
+
+.skyrim-nav-link{
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.separator{
+  display: flex;
+  border-bottom: 2px solid black;
+  margin: 10px 10px 10px 10px;
+}
+
+.separator .separator-tex-background{
+  background-color: var(--separator-tex-background-background-color);
+  border-radius: 30px;
+  padding: 2px 6px 2px 6px;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  margin: 2px;
+}
+
+.section-skyrim-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.board{
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+  margin: 20px;
+}
+
+.board:hover{
+  transform: scale(1.01);
+}
+
+.board .board-name{
+  background-color: var(--board-name-bc);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hi-fi-status{
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: var(--hi-fi-status-background-color);
+  border-radius: 20px;
+  margin-left: 8px;
+  padding-right: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.board-hi-fi{
+  background-color: #ee1d52;
+  border-radius: 20px;
+  height: 24px;
+  color: white;
+  padding: 2px;
+  padding-right: 5px;
+  margin-right: 4px;
+}
+
+.board-image{
+  width: 380px;
+  height: 240px;
+  position: relative;
+}
+
+.board-bar{
+  background-color: var(--board-bar-background-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.board-bar button{
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  position: relative;
+  left: -10px;
+  width: 32px;
+  height: 32px;
+}
+
+.board-bar button:hover{
+  cursor: pointer;
+  background-color: darkgray;
+  border-radius: 50px;
+
+}
+
+.board-bar button:active{
+  color: aqua;
+}
+
+audio{
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel{
+  background-color: var(---webkit-media-controls-panel);
+  transition:.4s;
+}
+
+i{
+  font-size: 20px;
+  outline: none;
+}
+
+/*SŁICZ*/
+
+.switch-background{
+  display: flex;
+  background-color: var(--switch-background);
+  border-radius: 100px;
+  padding: 0px 60px 0px 0px;
+  align-items: center;
+  box-shadow: 9px 15px 28px rgba(0, 0, 0, 0.25);
+}
+
+.switch-background:hover .slider .slider-img-animation{
+  transform: scale(1.2);
+}
+
+.switch-road{
+  width: 52px;
+  height: 26px;
+  border-radius: 100px;
+  background-color: lightgray;
+  position: absolute;
+  left: 42px;
+  bottom: 6px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('light.jpg');
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 42px;
+  bottom: 6px;
+  background-color: var(--slider-before-background-color);
+  -webkit-transition: .4s;
+}
+
+input:checked + .slider {
+  background-image: url('dark.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(25px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*SŁICZ-koniec*/

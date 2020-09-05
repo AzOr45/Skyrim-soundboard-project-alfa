@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='scripts/theme.js'></script>
+    <title>SoundBoard</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/css_fonts/fonts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="shortcut icon" href="img/fav.ico">
+    <script src="https://kit.fontawesome.com/38cd770473.js" crossorigin="anonymous"></script>
+    <script src='scripts/menu.js'></script>
+  </head>
+
+  <body onload="ciemny_motyw()">
+    <span id="theme"></span>
+    <section id="menu" class="menu">
+      <div class="button-menu-active-position">
+        <a href="hero.html"><div class="menu-site-name">SoundBoard</div></a>
+        <button class="menu-close-button button-menu-animation" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="menu-search-position"><input type="text" class="menu-search" placeholder="Wyszukaj..."></input><button class="menu-search-button"><i class="fas fa-search"></i></button></div>
+      <div class="menu-list-name">Inne SoundBoardy:</div>
+      <div class="menu-list">
+        <a href="index.html"><div class="menu-list-links"><i class="fas fa-caret-right"></i>Skyrim</div></a>
+        <a href="#"><div class="menu-list-links">Memy</div></a>
+        <a href="#"><div class="menu-list-links">BEM</div></a>
+        <a href="#"><div class="menu-list-links">Pieseły</div></a>
+      </div>
+    </section>
+
+    <header class="header-skyrim" style="background-image:url(img/skyrim/header.png);">
+        <div class="header-top-position">
+        <button class="button-menu button-menu-animation" onclick="openMenu()"><i class="fas fa-bars"></i></button>
+          <div class="switch-background">
+            <label class="switch">
+            <span class="switch-road"></span>
+            <input id="theme-button" type="checkbox" onclick="ciemny_motyw()"/>
+            <span class="slider round slider-img-animation"></span>
+            </label>
+          </div>
+        </div>
+      <div class="header-bottom-position">
+        <div class="cat-name-position">
+          <div class="cat-name"><div class="cat-name-image-white"><div class="cat-name-image" style="background-image:url(img/skyrim/circle-icon.jpg);"></div></div><p>SoundBoard Skyrim</p></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-skyrim">
+
+      <nav class="skyrim-nav">
+        <a class="skyrim-nav-link" href="#music"><div class="skyrim-nav-option"><div class="skyrim-nav-position"><div class="skyrim-nav-option-image" style="background-image:url(img/skyrim/music-option.png);"></div><div class="skyrim-nav-option-name">MUSIC</div></div></div></a>
+        <a class="skyrim-nav-link" href="#sounds"><div class="skyrim-nav-option"><div class="skyrim-nav-position"><div class="skyrim-nav-option-image" style="background-image:url(img/skyrim/sounds-option.jpg);"></div><div class="skyrim-nav-option-name">SOUNDS</div></div></div></a>
+        <a class="skyrim-nav-link" href="#characters"><div class="skyrim-nav-option"><div class="skyrim-nav-position"><div class="skyrim-nav-option-image" style="background-image:url(img/skyrim/characters-option.png);"></div><div class="skyrim-nav-option-name">CHARACTERS</div></div></div></a>
+        <a class="skyrim-nav-link" href="#shouts"><div class="skyrim-nav-option"><div class="skyrim-nav-position"><div class="skyrim-nav-option-image" style="background-image:url(img/skyrim/shouts-option.png);"></div><div class="skyrim-nav-option-name">SHOUTS</div></div></div></div></a>
+      </nav>
+
+      <section id="music" class="separator"><span class="separator-tex-background">Music</span></section>
+
+      <section class="section-skyrim-1">
+
+        <div class="board">
+          <div class="board-name">Sovngard</div>
+          <div class="board-image">
+            <div class="hi-fi-status"><span class="board-hi-fi">HI-FI</span>FLAC 16bit 44,1kHz</div>
+            <img src="content/skyrim/music/sovngard/image.png" width="380" height="240"/>
+          </div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/music/sovngard/audio.flac" type="audio/mpeg"/>
+            </audio>
+            <a download"audio.flac" href="content/skyrim/music/sovngard/audio.flac"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">Main theme</div>
+          <div class="board-image">
+            <div class="hi-fi-status"><span class="board-hi-fi">HI-FI</span>FLAC 16bit 44,1kHz</div>
+            <img src="content/skyrim/music/dragonborn/image.jpg" width="380" height="240"/>
+          </div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/music/dragonborn/audio.mp3" type="audio/mpeg"/>
+            </audio>
+            <a download"Dragonborn.mp3" href="content/skyrim/music/dragonborn/audio.mp3"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">One They Fear</div>
+          <div class="board-image">
+            <div class="hi-fi-status"><span class="board-hi-fi">HI-FI</span>FLAC 16bit 44,1kHz</div>
+            <img src="content/skyrim/music/mus_combat_boss_02/image.gif" width="380" height="240"/>
+          </div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/music/mus_combat_boss_02/audio.flac" type="audio/mpeg"/>
+            </audio>
+            <a download"Dragonborn.mp3" href="content/skyrim/music/mus_combat_boss_02/audio.flac"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">Dragonborn DLC trailer</div>
+          <div class="board-image">
+            <div class="hi-fi-status"><span class="board-hi-fi">HI-FI</span>FLAC 16bit 44,1kHz</div>
+            <img src="content/skyrim/music/dragonborn-dlc/image.jpg" width="380" height="240"/>
+          </div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/music/dragonborn-dlc/audio.mp3" type="audio/mpeg"/>
+            </audio>
+            <a download="Dragonborn DLC.mp3" href="content/skyrim/music/dragonborn-dlc/audio.mp3"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sounds" class="separator"><span class="separator-tex-background">Sounds</span></section>
+
+      <section class="section-skyrim-1">
+
+        <div class="board">
+          <div class="board-name">Level up</div>
+          <div class="board-image"><img src="1.gif" width="380" height="240"/></div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="skyrim-level-up.mp3" type="audio/mpeg"/>
+            </audio>
+            <a href="skyrim-level-up.mp3" download"test"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">Dragon sound</div>
+          <div class="board-image"><img src="4.gif" width="380" height="240"/></div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="skyrim-dragon-sound.mp3" type="audio/mpeg"/>
+            </audio>
+            <a download"skyrim-level-up" href="skyrim-level-up.mp3"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">Quest update</div>
+          <div class="board-image"><img src="content/skyrim/sounds/quest_update/image.gif" width="380" height="240"/></div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/sounds/quest_update/sound.mp3" type="audio/mpeg"/>
+            </audio>
+            <a download="10.jpg" href="10.jpg"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">Word of power</div>
+          <div class="board-image"><img src="content/skyrim/sounds/word_of_power/image.gif" width="380" height="240"/></div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/sounds/word_of_power/sound.wav" type="audio/mpeg"/>
+            </audio>
+            <a download="word_of_power.wav" href="content/skyrim/sounds/word_of_power/sound.wav"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="board-name">Buy Skyrim</div>
+          <div class="board-image"><img src="content/skyrim/sounds/buy-skyrim/buy-skyrim.png" width="380" height="240"/></div>
+          <div class="board-bar">
+            <audio controls class="bar-audio">
+              <source src="content/skyrim/sounds/buy-skyrim/buy-skyrim.mp3" type="audio/mpeg"/>
+            </audio>
+            <a download="10.jpg" href="10.jpg"><button class="bar-download"><i class="fas fa-download"></i></button></a>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="characters" class="separator"><span class="separator-tex-background">Characters</span></section>
+
+      <section class="section-skyrim-1">
+
+      </section>
+
+      <section id="shouts" class="separator"><span class="separator-tex-background">Shouts</span></section>
+
+      <section class="section-skyrim-1">
+
+      </section>
+    </main>
+  </body>
+</html>
